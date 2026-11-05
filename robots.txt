@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tvpriyangan-ai.github.io/sitemap.xml
-Sitemap: https://tvpriyangan-ai.github.io/DC_ELECTRICALS/sitemap.xml
+Sitemap: https://tvpriyangan.github.io/sitemap.xml
+Sitemap: https://tvpriyangan.github.io/DC_ELECTRICALS/sitemap.xml

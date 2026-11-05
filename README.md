@@ -1,1 +1,1 @@
-# tvpriyangan-ai.github.io
+# tvpriyangan.github.io
