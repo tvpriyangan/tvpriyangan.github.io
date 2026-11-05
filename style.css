@@ -755,6 +755,10 @@ footer {
   opacity: 1;
   transform: none;
 }
+/* hidden (not yet revealed) panels must not catch taps meant for content above them */
+.js main > .panel.rv:not(.in) {
+  pointer-events: none;
+}
 main > .panel {
   position: relative;
   overflow: hidden;
@@ -1216,8 +1220,10 @@ img {
   .layout.two {
     grid-template-columns: 1fr;
   }
+  /* no 3D tilt on small screens: tall panels tilted in 3D project far past the
+     screen and cover the content above them */
   .js main > .panel.rv {
-    transform: perspective(1200px) rotateX(-25deg) translateY(30px);
+    transform: translateY(30px);
   }
 }
 @media (max-width: 480px) {
