@@ -1689,3 +1689,43 @@ img {
   text-decoration-color: var(--gold);
   text-underline-offset: 3px;
 }
+/* Skills: honest learning-stage note */
+.skills-note {
+  position: relative;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.skills-note-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.skills-note-tag .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: skills-pulse 2s ease-in-out infinite;
+}
+.skills-note p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+@keyframes skills-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--soft); opacity: 1; }
+  50% { box-shadow: 0 0 0 6px transparent; opacity: 0.55; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skills-note-tag .dot { animation: none; }
+}
